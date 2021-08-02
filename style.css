@@ -1,0 +1,171 @@
+section:first-of-type {
+    display: grid;
+    border: 1px solid #000;
+    margin-bottom: 10%;
+    grid-template-columns: 2fr 3fr 4fr 3fr;
+    grid-template-rows: 200px 200px 300px;
+}
+
+.box1 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background: gold;
+}
+
+.box2 {
+    grid-row: 1/3;
+    grid-column: 2/4;
+    background: tomato;
+}
+
+.box3 {
+    grid-row: 3/4;
+    grid-column: 2/5;
+    background: grey;
+}
+
+.box4 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background: violet;
+}
+
+section:nth-of-type(2) {
+    display: grid;
+    margin-bottom: 10%;
+    border: 1px solid #000;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-rows: 50px 200px 200px 50px;
+}
+
+.box11 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: gold;
+}
+
+.box12 {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    background: tomato;
+}
+
+.box13 {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background: grey;
+}
+
+.box14 {
+    grid-column: 4/5;
+    grid-row: 2/5;
+    background: violet;
+}
+
+.box15 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    background: #fff;
+}
+
+.box16 {
+    grid-column: 1/3;
+    grid-row: 4/4;
+    background: lime;
+}
+
+.box17 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+    background: blue;
+}
+
+section:nth-of-type(3) {
+    display: grid;
+    margin-bottom: 10%;
+    grid-template-columns:  4fr 2fr 1fr;
+    grid-template-rows: 50px 300px 100px 50px;
+    grid-template-areas: 
+    "Header Header Header"
+    "Section Section Aside"
+    "Article_1 Article_2 Article_2"
+    "Footer Footer Footer";
+}
+
+.cont1 {
+    background: tomato;
+    grid-area: Header;
+}
+
+.cont2 {
+    background: lime;
+    grid-area: Section;
+}
+
+.cont3 {
+    background: lightblue;
+    grid-area: Aside;
+}
+
+.cont4 {
+    background: gold;
+    grid-area: Article_1;
+}
+
+.cont5 {
+    background: gold;
+    grid-area: Article_2;
+}
+
+.cont6 {
+    background: violet;
+    grid-area: Footer; 
+}
+
+section:nth-of-type(4) {
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr 2fr;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-areas: 
+    "Wonderwomen Batman Batman BlackWidow"
+    "Wonderwomen Groot CaptainMarvel BlackWidow"
+    "Wonderwomen Ironman CaptainMarvel BlackWidow"
+    "Loki Ironman Thor BlackWidow";
+}
+
+section:nth-of-type(4) > div {
+    background: orange;
+    border: 1px solid #000;
+}
+
+.box01 {
+    grid-area: Wonderwomen;
+}
+
+.box02 {
+    grid-area: Batman;
+}
+
+.box03 {
+    grid-area: BlackWidow;
+}
+
+.box04 {
+    grid-area: Groot;
+}
+
+.box05 {
+    grid-area: CaptainMarvel;
+}
+
+.box06 {
+    grid-area: Loki;
+}
+
+.box07 {
+    grid-area: Ironman;
+}
+
+.box08 {
+    grid-area: Thor;
+}
